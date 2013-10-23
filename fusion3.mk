@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    alsa.msm8960 \
     audio_policy.msm8960 \
     audio.primary.msm8960 \
     audio.a2dp.default \
@@ -105,10 +104,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     libaudio-resampler \
     tinymix
-
-# BT
-PRODUCT_PACKAGES += \
-    hci_qcomm_init
 
 # Media
 PRODUCT_COPY_FILES += \
