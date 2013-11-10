@@ -73,6 +73,9 @@
 /dev/ks_hsic_bridge       0660   system     system
 /dev/efs_hsic_bridge      0660   system     system
 
+#Ril
+/dev/diag                 0660   radio      radio
+
 # permissions for audio
 /dev/msm_qcelp            0660   system     audio
 /dev/msm_evrc             0660   system     audio
