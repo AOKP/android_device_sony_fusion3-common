@@ -63,6 +63,7 @@
 /dev/hsicctl1             0640   radio      radio
 /dev/hsicctl2             0640   radio      radio
 /dev/hsicctl3             0640   radio      radio
+/dev/diag                 0660   radio      radio
 /dev/v4l-subdev*          0660   system     camera
 /dev/video*               0660   system     camera
 /dev/ttyHSL1              0660   system     system
@@ -72,9 +73,6 @@
 /sys/devices/virtual/smdpkt/smdcntl*       open_timeout   0664 radio radio
 /dev/ks_hsic_bridge       0660   system     system
 /dev/efs_hsic_bridge      0660   system     system
-
-#Ril
-/dev/diag                 0660   radio      radio
 
 # permissions for audio
 /dev/msm_qcelp            0660   system     audio
