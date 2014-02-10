@@ -116,6 +116,10 @@ on boot
     chown bluetooth bluetooth /sys/devices/platform/msm_serial_hs.0/clock
     chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
 
+    #Touchscreen
+    chown system system /sys/devices/virtual/input/clearpad/wakeup_gesture
+    chmod 0664 /sys/devices/virtual/input/clearpad/wakeup_gesture
+
     # Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
