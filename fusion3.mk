@@ -199,5 +199,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd
 
+# Touchscreen
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.input.noresample=1
+
+# IR-blaster Support
+ifeq ($(BOARD_HAVE_IR_BLASTER),true)
+PRODUCT_PACKAGES += \
+    SonyIRRemote \
+    libjni_sonyopenir
+endif
+
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/fusion3-common/fusion3-common-vendor.mk)
