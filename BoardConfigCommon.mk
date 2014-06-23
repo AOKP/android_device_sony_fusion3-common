@@ -37,9 +37,6 @@ TARGET_QCOM_MEDIA_VARIANT := caf
 
 BOARD_LIB_DUMPSTATE := libdumpstate.sony
 
-# Architecture
-TARGET_ARCH_VARIANT_CPU := cortex-a9
-
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
